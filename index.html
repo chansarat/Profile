@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A little introduction to Sarat.">
+  <title>Meet Sarat</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #23304a;
+      background: #f5f7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 48px 20px;
+      background: linear-gradient(145deg, #f8f2ff, #edf7ff);
+    }
+
+    main {
+      width: min(100%, 720px);
+      margin: 0 auto;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid #e7e8f4;
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 16px 40px rgb(44 57 92 / 10%);
+    }
+
+    header {
+      padding: 48px 32px 40px;
+      text-align: center;
+      background: linear-gradient(120deg, #dff4ff, #f2e8ff);
+    }
+
+    .hello {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #fff;
+      color: #5b4cb5;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      color: #30265f;
+      font-size: clamp(2.4rem, 8vw, 3.8rem);
+      line-height: 1.1;
+    }
+
+    .intro {
+      max-width: 440px;
+      margin: 16px auto 0;
+      color: #4d5871;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 28px 32px;
+    }
+
+    section + section {
+      border-top: 1px solid #edf0f7;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: #473b8c;
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0;
+      color: #4d5871;
+      line-height: 1.7;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 2px 6px 2px 0;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: #365b96;
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 20px 32px;
+      background: #fafaff;
+      color: #69738a;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 24px 14px;
+      }
+
+      header {
+        padding: 38px 20px 32px;
+      }
+
+      section {
+        padding: 24px 20px;
+      }
+
+      footer {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <header>
+        <p class="hello">Hello, nice to meet you!</p>
+        <h1>I'm Sarat</h1>
+        <p class="intro">I'm a KIC student.</p>
+      </header>
+
+      <section aria-labelledby="interests-heading">
+        <h2 id="interests-heading">Things I enjoy</h2>
+        <p>
+          <span class="tag">Listening to music</span>
+          <span class="tag">Travelling</span>
+        </p>
+      </section>
+
+      <section aria-labelledby="message-heading">
+        <h2 id="message-heading">A little message</h2>
+        <p>Nice to meet you!!!</p>
+      </section>
+
+      <footer>Thanks for visiting my page.</footer>
+    </article>
+  </main>
+</body>
+</html>
